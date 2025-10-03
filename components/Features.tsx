@@ -19,64 +19,64 @@ const features = [
     name: 'AI-Powered Analysis',
     description: 'Our advanced AI automatically analyzes your content to identify the most engaging and viral-worthy moments.',
     icon: Brain,
-    color: 'text-blue-600',
-    bgColor: 'bg-blue-100',
+    color: 'text-blue-400',
+    bgColor: 'bg-blue-500/20',
   },
   {
     name: 'Smart Content Clipping',
     description: 'Automatically extract the best 15-60 second clips from your longer content with perfect timing.',
     icon: Video,
-    color: 'text-purple-600',
-    bgColor: 'bg-purple-100',
+    color: 'text-purple-400',
+    bgColor: 'bg-purple-500/20',
   },
   {
     name: 'Viral Optimization',
     description: 'Optimize your content for maximum engagement across TikTok, Instagram Reels, and YouTube Shorts.',
     icon: TrendingUp,
-    color: 'text-green-600',
-    bgColor: 'bg-green-100',
+    color: 'text-green-400',
+    bgColor: 'bg-green-500/20',
   },
   {
     name: 'Instant Processing',
     description: 'Get your viral content ready in minutes, not hours. Our AI works at lightning speed.',
     icon: Clock,
-    color: 'text-orange-600',
-    bgColor: 'bg-orange-100',
+    color: 'text-orange-400',
+    bgColor: 'bg-orange-500/20',
   },
   {
     name: '25+ Video Templates',
     description: 'Choose from a variety of professional templates including audiograms, quote cards, and more.',
     icon: Palette,
-    color: 'text-pink-600',
-    bgColor: 'bg-pink-100',
+    color: 'text-pink-400',
+    bgColor: 'bg-pink-500/20',
   },
   {
     name: 'Multi-Platform Ready',
     description: 'Export content optimized for different platforms with the right dimensions and formats.',
     icon: Globe,
-    color: 'text-indigo-600',
-    bgColor: 'bg-indigo-100',
+    color: 'text-indigo-400',
+    bgColor: 'bg-indigo-500/20',
   },
   {
     name: 'Mobile-First Design',
     description: 'All content is designed for mobile viewing with vertical formats and mobile-optimized text.',
     icon: Smartphone,
-    color: 'text-cyan-600',
-    bgColor: 'bg-cyan-100',
+    color: 'text-cyan-400',
+    bgColor: 'bg-cyan-500/20',
   },
   {
     name: 'Analytics & Insights',
     description: 'Track performance and get insights on what content performs best for your audience.',
     icon: BarChart3,
-    color: 'text-emerald-600',
-    bgColor: 'bg-emerald-100',
+    color: 'text-emerald-400',
+    bgColor: 'bg-emerald-500/20',
   },
   {
     name: 'Secure & Private',
     description: 'Your content is processed securely with enterprise-grade encryption and privacy protection.',
     icon: Shield,
-    color: 'text-red-600',
-    bgColor: 'bg-red-100',
+    color: 'text-red-400',
+    bgColor: 'bg-red-500/20',
   },
 ];
 
@@ -117,13 +117,13 @@ export function Features() {
                 viewport={{ once: true }}
                 className="flex flex-col"
               >
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
                   <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${feature.bgColor}`}>
                     <feature.icon className={`h-6 w-6 ${feature.color}`} aria-hidden="true" />
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
                   <p className="flex-auto">{feature.description}</p>
                 </dd>
               </motion.div>
@@ -139,17 +139,17 @@ export function Features() {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <div className="rounded-2xl bg-gradient-to-r from-primary-600 to-primary-800 px-6 py-12 sm:px-16">
+          <div className="rounded-2xl bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-12 sm:px-16">
             <h3 className="text-2xl font-bold text-white sm:text-3xl">
               Ready to create your first viral video?
             </h3>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-100">
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-purple-100">
               Join thousands of creators who are already using AI to create engaging content that drives results.
             </p>
             <div className="mt-8">
               <a
                 href="/dashboard"
-                className="inline-flex items-center rounded-md bg-white px-6 py-3 text-base font-medium text-primary-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
+                className="inline-flex items-center rounded-md bg-white px-6 py-3 text-base font-medium text-purple-600 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-purple-600"
               >
                 Get Started Free
                 <Zap className="ml-2 h-4 w-4" />
