@@ -23,7 +23,7 @@ export function Header() {
   const isActive = (href: string) => pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -32,7 +32,7 @@ export function Header() {
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-pink-600">
                 <Zap className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">AI Viral Clipper</span>
+              <span className="text-xl font-bold text-gray-900">AI Viral Clipper</span>
             </Link>
           </div>
 
@@ -42,10 +42,10 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-purple-400 ${
+                className={`text-sm font-medium transition-colors hover:text-purple-600 ${
                   isActive(item.href)
-                    ? 'text-purple-400'
-                    : 'text-gray-300'
+                    ? 'text-purple-600'
+                    : 'text-gray-700'
                 }`}
               >
                 {item.name}
@@ -62,7 +62,7 @@ export function Header() {
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/20">
                   <User className="h-4 w-4 text-purple-400" />
                 </div>
-                <span className="text-sm font-medium text-gray-300">
+                <span className="text-sm font-medium text-gray-700">
                   {session.user.email}
                 </span>
                 <Button
@@ -79,7 +79,7 @@ export function Header() {
             ) : (
               <div className="flex items-center space-x-3">
                 <Link href="/auth/login">
-                  <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white">
+                  <Button variant="ghost" size="sm" className="text-gray-700 hover:text-gray-900">
                     Sign In
                   </Button>
                 </Link>
@@ -116,17 +116,17 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-gray-900/95 backdrop-blur-md border-b border-gray-800/50"
+            className="md:hidden bg-white/95 backdrop-blur-md border-b border-gray-200"
           >
             <div className="px-4 py-4 space-y-3">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`block text-base font-medium transition-colors hover:text-purple-400 ${
+                  className={`block text-base font-medium transition-colors hover:text-purple-600 ${
                     isActive(item.href)
-                      ? 'text-purple-400'
-                      : 'text-gray-300'
+                      ? 'text-purple-600'
+                      : 'text-gray-700'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -134,14 +134,14 @@ export function Header() {
                 </Link>
               ))}
               
-              <div className="pt-4 border-t border-gray-800/50">
+              <div className="pt-4 border-t border-gray-200">
                 {session ? (
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
                       <div className="flex h-8 w-8 items-center justify-center rounded-full bg-purple-500/20">
                         <User className="h-4 w-4 text-purple-400" />
                       </div>
-                      <span className="text-sm font-medium text-gray-300">
+                      <span className="text-sm font-medium text-gray-700">
                         {session.user.email}
                       </span>
                     </div>
@@ -162,7 +162,7 @@ export function Header() {
                 ) : (
                   <div className="space-y-3">
                     <Link href="/auth/login" className="block">
-                      <Button variant="ghost" size="sm" className="w-full text-gray-300 hover:text-white">
+                      <Button variant="ghost" size="sm" className="w-full text-gray-700 hover:text-gray-900">
                         Sign In
                       </Button>
                     </Link>

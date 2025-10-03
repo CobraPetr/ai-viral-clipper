@@ -41,7 +41,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6"
+            className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-6"
           >
             Turn Long Videos Into{' '}
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
@@ -65,7 +65,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-16 max-w-2xl mx-auto"
           >
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 shadow-2xl">
+            <div className="bg-gray-800/60 backdrop-blur-lg border border-gray-700/50 rounded-3xl p-12 shadow-2xl">
               <h3 className="text-xl font-semibold text-white mb-6">Start Your Viral Transformation</h3>
               <p className="text-gray-400 mb-8">Upload a video file or paste a URL from YouTube, TikTok, or any podcast</p>
               
@@ -88,18 +88,18 @@ export function Hero() {
               </div>
 
               {/* Drop Zone */}
-              <div className="border-2 border-dashed border-gray-600 rounded-xl p-12 text-center hover:border-purple-500 transition-colors duration-300 cursor-pointer group">
-                <Upload className="mx-auto h-16 w-16 text-gray-500 group-hover:text-purple-400 transition-colors mb-4" />
-                <p className="text-gray-400 mb-2">Click to upload</p>
+              <div className="border-2 border-dashed border-gray-600 rounded-2xl p-16 text-center hover:border-purple-500 transition-all duration-300 cursor-pointer group hover:bg-purple-500/5">
+                <Upload className="mx-auto h-20 w-20 text-gray-500 group-hover:text-purple-400 transition-all duration-300 mb-6" />
+                <p className="text-gray-400 mb-3 text-lg">Click to upload</p>
                 <p className="text-sm text-gray-500">MP4, MOV, AVI, MP3, WAV (max 2GB)</p>
               </div>
 
               {/* Generate Button */}
               <Button 
                 size="lg" 
-                className="w-full mt-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 text-lg shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
+                className="w-full mt-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-6 text-xl shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 transform hover:scale-105"
               >
-                <Sparkles className="mr-3 h-5 w-5" />
+                <Sparkles className="mr-3 h-6 w-6" />
                 Generate Viral Clips
               </Button>
             </div>
@@ -110,19 +110,19 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8"
           >
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">10x</div>
-              <p className="text-gray-400">Faster Content Creation</p>
+            <div className="text-center bg-gray-800/40 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+              <div className="text-5xl font-bold text-white mb-3">10x</div>
+              <p className="text-gray-300 text-lg">Faster Content Creation</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">85%</div>
-              <p className="text-gray-400">Higher Engagement Rate</p>
+            <div className="text-center bg-gray-800/40 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+              <div className="text-5xl font-bold text-white mb-3">85%</div>
+              <p className="text-gray-300 text-lg">Higher Engagement Rate</p>
             </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-white mb-2">25+</div>
-              <p className="text-gray-400">Video Templates</p>
+            <div className="text-center bg-gray-800/40 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
+              <div className="text-5xl font-bold text-white mb-3">25+</div>
+              <p className="text-gray-300 text-lg">Video Templates</p>
             </div>
           </motion.div>
         </div>
