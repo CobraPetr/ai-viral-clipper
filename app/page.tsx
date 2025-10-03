@@ -1,9 +1,10 @@
 import { Metadata } from 'next';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
+import { ProblemSolution } from '@/components/ProblemSolution';
 import { Features } from '@/components/Features';
 import { HowItWorks } from '@/components/HowItWorks';
-import { Pricing } from '@/components/Pricing';
+import { OfferSection } from '@/components/OfferSection';
 import { Testimonials } from '@/components/Testimonials';
 import { CTA } from '@/components/CTA';
 import { Footer } from '@/components/Footer';
@@ -19,9 +20,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <ProblemSolution />
         <Features />
         <HowItWorks />
-        <Pricing />
+        <OfferSection />
         <Testimonials />
         <CTA />
       </main>

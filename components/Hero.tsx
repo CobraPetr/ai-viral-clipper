@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Upload, Link as LinkIcon, Sparkles, Play } from 'lucide-react';
+import { ArrowRight, Upload, Link as LinkIcon, Sparkles, Play, CheckCircle, Star, Users, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 
