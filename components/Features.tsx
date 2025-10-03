@@ -82,7 +82,7 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-24 sm:py-32 bg-white">
+    <section className="py-24 sm:py-32 bg-gray-900">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <motion.h2
@@ -90,7 +90,7 @@ export function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight text-white sm:text-4xl"
           >
             Everything you need to create viral content
           </motion.h2>
@@ -99,7 +99,7 @@ export function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="mt-6 text-lg leading-8 text-gray-600"
+            className="mt-6 text-lg leading-8 text-gray-300"
           >
             Our AI-powered platform handles everything from content analysis to final video creation, 
             so you can focus on what matters most - creating amazing content.
