@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 import { UploadInterface } from '@/components/upload/UploadInterface';
-import { UploadProgress } from '@/components/upload/UploadProgress';
-import { UploadSuccess } from '@/components/upload/UploadSuccess';
 import { Suspense } from 'react';
 
 export const metadata: Metadata = {
